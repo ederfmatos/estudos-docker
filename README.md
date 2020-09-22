@@ -6,4 +6,4 @@ Este repositório contém minhas anotações sobre docker.
 
 ### Em andamento
 
-[X] - Docker: Criando containers sem dor de cabeça - Alura
+- [X] Docker: Criando containers sem dor de cabeça - Alura
