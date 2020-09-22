@@ -2,8 +2,12 @@
 
 Este repositório contém minhas anotações sobre docker.
 
+# Sumário
+
+- [1 - Containers](./Containers.md)
+
 ## Cursos
 
 ### Em andamento
 
-- [X] Docker: Criando containers sem dor de cabeça - Alura
+- [x] [Docker: Criando containers sem dor de cabeça - Alura](https://www.alura.com.br/curso-online-docker-e-docker-compose)
