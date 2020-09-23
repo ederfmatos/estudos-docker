@@ -75,3 +75,47 @@ docker images
 ```bash
 docker rmi <image-id>
 ```
+
+# Detach terminal
+
+```bash
+# Roda um comando sem travar o terminal
+docker run -d <container-id>
+```
+
+# Saber porta de container
+
+```bash
+docker port <container-id>
+```
+
+# Nomear container
+
+```bash
+--name <container-name>
+
+# Exemplo:
+
+docker run --name meu-linux ubuntu
+```
+
+# Mapear porta da propria maquina para o docker
+
+```bash
+docker run -p <porta-maquina>:<porta-docker>
+
+# Exemplo
+docker run -p 1234:80 dockersamples/static-site
+```
+
+# Listar id's de containers ativos
+
+```bash
+docker ps -q
+```
+
+# Parar todos os containers ativos
+
+```bash
+docker stop -t 0 $(docker ps -q)
+```
