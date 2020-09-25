@@ -8,6 +8,8 @@ Este repositório contém minhas anotações sobre docker.
 
 - [1 - Containers](./Containers.md)
 - [2 - Comandos](./Comandos.md)
+- [3 - Volumes](./Volumes.md)
+- [4 - Redes](./Redes.md)
 
 ## Cursos
 
