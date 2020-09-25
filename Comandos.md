@@ -1,18 +1,18 @@
 # Comandos docker
 
-#### Obter a versão do docker:
+### Obter a versão do docker:
 
 ```bash
 docker version
 ```
 
-#### Criar container hello world
+### Criar container hello world
 
 ```bash
 docker run hello-world
 ```
 
-#### Baixar imagem
+### Baixar imagem
 
 hub.docker.com/)
 
@@ -21,7 +21,7 @@ hub.docker.com/)
 docker pull <image>
 ```
 
-#### Listar containers
+### Listar containers
 
 Lista containers em execução
 
@@ -35,25 +35,25 @@ Lista todos os containers, mesmo os parados
 docker ps -a
 ```
 
-## Integrar terminal com terminal do container
+### Integrar terminal com terminal do container
 
 ```bash
 docker run -it <container>
 ```
 
-## Iniciar container
+### Iniciar container
 
 ```bash
 docker start <container-id>
 ```
 
-## Parar execução de container
+### Parar execução de container
 
 ```bash
 docker stop <container-id>
 ```
 
-## Apagar container
+### Apagar container
 
 ```bash
 docker rm <container-id>
@@ -64,32 +64,32 @@ docker rm <container-id>
 docker container prune
 ```
 
-# Listar imagens
+### Listar imagens
 
 ```bash
 docker images
 ```
 
-# Apagar imagens
+### Apagar imagens
 
 ```bash
 docker rmi <image-id>
 ```
 
-# Detach terminal
+### Detach terminal
 
 ```bash
 # Roda um comando sem travar o terminal
 docker run -d <container-id>
 ```
 
-# Saber porta de container
+### Saber porta de container
 
 ```bash
 docker port <container-id>
 ```
 
-# Nomear container
+### Nomear container
 
 ```bash
 --name <container-name>
@@ -99,7 +99,7 @@ docker port <container-id>
 docker run --name meu-linux ubuntu
 ```
 
-# Mapear porta da propria maquina para o docker
+### Mapear porta da propria maquina para o docker
 
 ```bash
 docker run -p <porta-maquina>:<porta-docker>
@@ -108,13 +108,13 @@ docker run -p <porta-maquina>:<porta-docker>
 docker run -p 1234:80 dockersamples/static-site
 ```
 
-# Listar id's de containers ativos
+### Listar id's de containers ativos
 
 ```bash
 docker ps -q
 ```
 
-# Parar todos os containers ativos
+### Parar todos os containers ativos
 
 ```bash
 docker stop -t 0 $(docker ps -q)
